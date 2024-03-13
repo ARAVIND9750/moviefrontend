@@ -1,0 +1,37 @@
+<div class="main">
+  <div
+    style="
+      text-align: center;
+      height: 60px;
+      color: white;
+      background-color: rgb(34, 37, 57);
+    "
+  >
+    <h1>Movies Available</h1>
+  </div>
+  <div class="row">
+    <div class="col-4 movieBox" *ngFor="let movie of moviesList">
+      <div class="container">
+        <div class="container" style="text-align: center; font-size: larger">
+          <div class="movieDetail" (click)="bookMovie(movie)">
+            <br />
+            <p>
+              <img
+                src="{{ movie?.banner }}"
+                width="250px"
+                height="140px"
+                alt="banner"
+                style="margin-bottom: 5px"
+              />
+            </p>
+            <p>{{ movie?.name }}</p>
+            <p>{{ movie?.duration }}</p>
+            <p>{{ movie?.language }}</p>
+            <p>{{ movie?.genre }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>

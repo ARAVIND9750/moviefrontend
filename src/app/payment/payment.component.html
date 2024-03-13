@@ -1,0 +1,48 @@
+<div class="payment-details">
+  <div class="form_payment">
+    <h4>Enter your Card details</h4>
+    <br />
+    <form method="post">
+      <p>
+        Card Holder Name :
+        <br />
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Your Card Holder Name"
+          maxlength="30"
+        />
+      </p>
+      <p>
+        Card Number :<br />
+        <input
+          type="text"
+          id="cardNumber"
+          placeholder="Enter Your Card Number"
+          maxlength="16"
+        />
+      </p>
+      <p>
+        Cvv :<br />
+        <input
+          type="password"
+          name="cvv"
+          placeholder="Enter CVV"
+          maxlength="3"
+        />
+      </p>
+      <p>
+        Expiry Date :<br />
+        <input
+          type="date"
+          name="expiry_date"
+          placeholder="Enter Your Expiry Date"
+        />
+      </p>
+      <div class="main">
+        <br />
+        <a [routerLink]="['/payment-page']" class="button">Confirm Payment</a>
+      </div>
+    </form>
+  </div>
+</div>

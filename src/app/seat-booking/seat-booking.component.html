@@ -1,0 +1,41 @@
+<div
+  style="
+    text-align: center;
+    height: 60px;
+    color: white;
+    background-color: rgb(34, 37, 57);
+  "
+>
+  <h1>Select Seat</h1>
+</div>
+<div class="bg">
+  <div
+    *ngFor="let row of rowList"
+    class="seatRow"
+    style="margin-left: 35.8%; margin-top: 10px"
+  >
+    <ng-container *ngFor="let column of columnList">
+      <div
+        *ngIf="!bookedSeats.includes(row + column)"
+        class="seat"
+        id="{{ row }}{{ column }}"
+        (click)="onClickSeat($event)"
+      >
+        {{ row }}{{ column }}
+      </div>
+      <div
+        *ngIf="bookedSeats.includes(row + column)"
+        class="seat blockedSeat"
+        id="{{ row }}{{ column }}"
+        (click)="onClickSeat($event)"
+        disabled
+      >
+        {{ row }}{{ column }}
+      </div>
+    </ng-container>
+  </div>
+
+  <div style="padding-top: 10px; text-align: center">
+    <button class="btn btn-warning" (click)="bookSeats()">BOOK SEATS</button>
+  </div>
+</div>

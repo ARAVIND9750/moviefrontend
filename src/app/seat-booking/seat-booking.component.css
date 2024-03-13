@@ -1,0 +1,29 @@
+.seat {
+  height: 28px;
+  width: 28px;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0px 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.seatRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6px;
+}
+.selectedSeat {
+  background-color: aqua;
+}
+.blockedSeat {
+  background-color: grey;
+  pointer-events: none;
+}
+/* .bg {
+  background-color: rgb(34, 37, 57);
+
+  width: 100%;
+  height: 100%;
+} */

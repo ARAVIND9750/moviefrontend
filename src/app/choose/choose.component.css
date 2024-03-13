@@ -1,0 +1,50 @@
+.chooseDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.chooseForm {
+  border: 2px solid black;
+  padding: 35px 20px;
+}
+.dateInput {
+  width: 200px;
+}
+.timeInput {
+  width: 200px;
+}
+
+.choosenmovie {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px 2px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(34, 37, 57);
+  /* background-image: "{{choosenMovie?.banner}}"; */
+  color: white;
+  padding-left: 20px;
+  text-align: center;
+  width: 40%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.col {
+  cursor: pointer;
+  background-color: rgb(34, 37, 57);
+  color: white;
+}
+
+.main {
+  background-color: rgb(34, 37, 57);
+}
+
+.col1 {
+  text-align: center;
+}
+.hi {
+  height: 60px;
+  background-color: rgb(34, 37, 57);
+  color: white;
+}
